@@ -42,7 +42,7 @@ async def acc_info(message: types.Message):
 @dp.message_handler()
 async def process_id(message: types.Message):
     msg = message["text"]
-    if msg == "master":
+    if msg.lower() == "master":
         msg = str(conf.master_id)
 
     global player_info, heroes_stat
