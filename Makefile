@@ -5,8 +5,8 @@ install_requirements:
 
 .PHONY: build
 build:
-	touch conf1.yaml
-	echo "dota_bot:\n  telegram_token: \n  dota_token: \n  master_id: " > conf1.yaml
+	touch conf.yaml
+	echo "dota_bot:\n  telegram_token: \n  dota_token: \n  master_id: " > conf.yaml
 
 .PHONY: start
 start:
